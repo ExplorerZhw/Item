@@ -1,0 +1,100 @@
+<form action="addapply.do" method="post" >
+    <div class="row additem">
+        <div class="col-md-2">&nbsp;</div>
+        <div class="col-md-8">
+            <table style="border-color: #AACCFF"  class="table">
+                 <tr>
+                    <td>
+                        <span class="input-group-addon">物资类型</span>
+                    </td>
+                    <td>
+                        <select id="iType"  name="iType" onchange="searchNameByType()" class="form-control">
+                        	<option ></option>
+                        	<option >常用工具</option>
+                        	<option >备用工具</option>
+                        	<option >油品储存</option>
+                        	<option >应急物资</option>
+                        	<option >备件</option>
+                        	<option >安全工器具</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">物资名称</span>
+                    </td>
+                    <td>
+                    	<input id="iName"  name="iName" type="text"  list="name"  onchange="searchSpecByName()" class="form-control" />
+                    	<datalist id="name">
+			</datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">产品规格</span>
+                    </td>
+                    <td>
+                        <select id="iSpec"  name="iSpec" onchange="searchFactoryBySpec()" class="form-control">
+                        	<option ></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">生产厂家</span>
+                    </td>
+                    <td>
+                        <select id="factory"  name="factory" onchange="setAddApplyTime()" class="form-control">
+                        	<option ></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">领用数量</span>
+                    </td>
+                    <td>
+                        <input id="aCount"  name="aCount" type="text" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">领用时间</span>
+                    </td>
+                    <td>
+                        <input  name="aOutTime_y"  type="text"  id="aOutTime_y" size='5px' />年
+                        <input  name="aOutTime_m"  type="text"  id="aOutTime_m"  size='5px' />月
+                        <input  name="aOutTime_d"  type="text"  id="aOutTime_d" size='5px' />日
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">备注</span>
+                    </td>
+                    <td>
+                        <textarea  name="other"   id="other"  rows="3" cols="20" class="form-control"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">申 请 人</span>
+                    </td>
+                    <td>
+                        <input  name="applyPerson"  id="applyPerson" class="form-control" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div style="text-align: center;">
+	<button type="submit" class="am-btn am-btn-primary am-btn-xs">确定</button>
+    </div>
+</form>
+<script type="text/javascript">
+$(function () {  
+    $('#datetimepicker1').datetimepicker({  
+        format: 'YYYY-MM-DD',  
+        locale: moment.locale('zh-cn')  
+    });  
+}); 
+</script>

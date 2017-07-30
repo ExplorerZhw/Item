@@ -1,0 +1,102 @@
+<form action="additem.do" method="post" >
+    <div class="row additem">
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-10">
+            <table style="border-color: #AACCFF"  class="table">
+                <tr>
+                    <td>
+                        <span class="input-group-addon">物资名称</span>
+                    </td>
+                    <td>
+                        <input id="iName"  name="iName" type="text" class="form-control" />
+                    </td>
+                    <td>
+                        <span class="input-group-addon">物资编号</span>
+                    </td>
+                    <td>
+                        <input id="iNumber" name="iNumber" type="text" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">物资规格</span>
+                    </td>
+                    <td>
+                        <input id="iSpec" name="iSpec" type="text" class="form-control" />
+                    </td>
+                    <td>
+                        <span class="input-group-addon">物资数量</span>
+                    </td>
+                    <td>
+                        <input id="iCount"  name="iCount" type="text" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">物资类型</span>
+                    </td>
+                    <td>
+                         <select id="iType"  name="iType" style="width: 161px" onchange="loadDate('iInstoreTime')" class="form-control" >
+                        	<option ></option>
+                        	<option >常用工具</option>
+                        	<option >备用工具</option>
+                        	<option >油品储存</option>
+                        	<option >应急物资</option>
+                        	<option >备件</option>
+                        	<option >安全工器具</option>
+                        </select>
+                    </td>
+                    <td>
+                        <span class="input-group-addon">权限级别</span>
+                    </td>
+                    <td>
+                        <input id="iLevel"  name="iLevel" type="text" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">生产厂家</span>
+                    </td>
+                    <td>
+                        <input id="factory"  name="factory" type="text" class="form-control" />
+                    </td>
+                    <td>
+                        <span class="input-group-addon">存放位置</span>
+                    </td>
+                    <td>
+                        <input id="iLocation" name="iLocation"  type="text" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">入库时间</span>
+                    </td>
+                    <td>
+                        <input  name="iInstoreTime_y"  type="text"  id="iInstoreTime_y" size='5px' />年
+                        <input  name="iInstoreTime_m"  type="text"  id="iInstoreTime_m"  size='5px' />月
+                        <input  name="iInstoreTime_d"  type="text"  id="iInstoreTime_d" size='5px' />日
+                    </td>
+                    <td>
+                        <span class="input-group-addon">有效期至</span>
+                    </td>
+                    <td>
+                        <input  name="iAbateTime_y"  type="text"  id="iAbateTime_y"  size='5px' />年
+                        <input  name="iAbateTime_m"  type="text"  id="iAbateTime_m"  size='5px' />月
+                        <input  name="iAbateTime_d"  type="text"  id="iAbateTime_d"  size='5px' />日
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">备注</span>
+                    </td>
+                    <td>
+                        <textarea  name="other"   id="other"  rows="3" cols="20" class="form-control"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div style="text-align: center;">
+		<button type="submit" class="btn btn-info">确定</button>
+    </div>
+</form>

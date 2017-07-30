@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/classes/HtmlTemplate/addapply.htm=UTF-8
+encoding//WebContent/WEB-INF/classes/HtmlTemplate/additem.htm=UTF-8
+encoding//WebContent/WEB-INF/classes/HtmlTemplate/adduser.htm=UTF-8
+encoding//WebContent/WEB-INF/classes/HtmlTemplate/searchapply.htm=UTF-8
+encoding//WebContent/WEB-INF/classes/HtmlTemplate/searchitem.htm=UTF-8
+encoding//WebContent/WEB-INF/classes/HtmlTemplate/searchuser.htm=UTF-8
+encoding//WebContent/WEB-INF/classes/HtmlTemplate/updateitem.htm=UTF-8
+encoding//WebContent/WEB-INF/classes/HtmlTemplate/updateuser.htm=UTF-8
+encoding//WebContent/WEB-INF/jsp/login.jsp=UTF-8
+encoding//WebContent/index.jsp=UTF-8
+encoding//WebContent/style/css.css=UTF-8
+encoding/<project>=UTF-8

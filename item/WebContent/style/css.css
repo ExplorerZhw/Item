@@ -1,0 +1,70 @@
+body{
+    background-color: #EBEBEB
+}
+.top{
+    background-color: #5BC0DE;
+    height: 130px;
+}
+.loginStyle{
+	width: 300px;
+	height: 200px;
+	margin-right:auto;
+	margin-left: auto;
+	margin-top: 300px;
+}
+#title{
+    font-family: "楷体";
+    font-size: 50px;
+    margin-top: 20px;
+}
+#date{
+    font-family: "楷体";
+    font-size: 20px;
+    float: right;
+}
+#menu{
+    font-family: "楷体";
+    font-size: 20px;
+}
+
+#addForm{
+	font-size: 20px;
+	float: right;
+}
+#title{
+    text-align: center;
+    font-family: "楷体";
+    font-size: 50px;
+}
+#date{
+    padding-right: 20px;
+    font-family: "楷体";
+    font-size: 20px;
+    float: right;
+}
+#menu{
+    font-family: "楷体";
+    font-size: 20px;
+}
+.menu{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #D4D4D4;
+}
+.menu1{
+    font-size: 16px;
+    margin-bottom: 3px;
+    background-color: #EBEBEB;
+}
+.count{
+    height: 600px;
+    background-color: #D4D4D4;
+    padding-right: 15px;
+}
+.itemtable{
+	font-size: 12px;
+}
+.additem{
+	margin-top: 30px;
+}

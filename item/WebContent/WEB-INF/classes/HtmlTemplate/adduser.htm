@@ -1,0 +1,57 @@
+<form action="adduser.do" method="post" onSubmit="return checkForm()">
+    <div class="row" style="margin-top: 40px">
+        <div class="col-md-3">&nbsp;</div>
+        <div class="col-md-6">
+            <table style="border-color: #AACCFF"  class="table">
+                <tr>
+                    <td>
+                        <span class="input-group-addon">登录账号</span>
+                    </td>
+                    <td>
+                        <input id="loginName" name="loginName" type="text" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">用户姓名</span>
+                    </td>
+                    <td>
+                        <input id="name" name="name" type="text" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">密        码</span>
+                    </td>
+                    <td>
+                        <input id="password1" name="password1" type="text" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">确认密码</span>
+                    </td>
+                    <td>
+                        <input id="password2" name="password2" type="text" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="input-group-addon">权限级别</span>
+                    </td>
+                    <td>
+                        <select id="jSelect" onchange="jChange()" class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                        <input id="jurisdiction" name="jurisdiction" type="hidden" value="1"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-3">&nbsp;</div>
+    </div>
+    <div style="text-align: center;">
+    	<button type="submit" class="btn btn-info" onclick="checkUserExist()">提交</button>
+    </div>
+</form>

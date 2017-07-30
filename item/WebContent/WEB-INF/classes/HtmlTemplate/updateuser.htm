@@ -1,0 +1,46 @@
+<form action="updateuser.do" method="post" onSubmit="return checkForm1()">
+    <div class="am-g" style="margin-top: 40px">
+        <div class="am-u-sm-1">&nbsp;</div>
+        <div class="am-u-sm-10">
+            <table style="border-color: #AACCFF"  class="am-table">
+                <tr>
+                    <td>
+                        <label>登录账号</label>
+                    </td>
+                    <td>
+                     	<input id="userid" name="userid" type="hidden"  />
+                        <input id="loginName" name="loginName" type="text" size="50%" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>用户姓名</label>
+                    </td>
+                    <td>
+                        <input id="name" name="name" type="text" size="50%" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>密码</label>
+                    </td>
+                    <td>
+                        <input id="password" name="password" type="password" size="50%" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>权限级别</label>
+                    </td>
+                    <td>
+                        <input id="iLevel" name="iLevel" type="text" size="50%"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="am-u-sm-1">&nbsp;</div>
+    </div>
+    <div style="text-align: center;">
+    	<button type="submit" class="am-btn am-btn-primary am-btn-xs">确定</button>
+    </div>
+</form>

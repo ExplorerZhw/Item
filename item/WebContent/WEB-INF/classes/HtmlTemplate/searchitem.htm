@@ -1,0 +1,42 @@
+<div class="row" style="margin-top: 40px">
+    <div class="col-md-12" style="margin-bottom: 20px">
+        <div class="col-md-2">&nbsp;</div>
+        <div class="col-md-2">
+        	<select id="keyType" class="form-control">
+                <option value="itemName">物资名称</option>
+                <option value="itemNum">物资编号</option>
+                <option value="itemSpec">物资规格</option>
+                <option value="itemType">物资类型</option>
+                <option value="iInStoreTime">入库时间</option>
+                <option value="iAbateTime">有效期至</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <input id="searchStr" placeholder="输入关键字" class="form-control" />
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-info" onclick="searchItem()">查找</button>
+            <button type="submit" class="btn btn-info" onclick="deleteItem()">删除</button>
+            <button type="submit" class="btn btn-info" onclick="updateItem()">编辑</button>
+        </div>
+    </div>
+    <div class="col-md-1">&nbsp;</div>
+    <div class="col-md-10 itemtable" style="overflow:auto">
+        <table id="itemInfo" style="border-color: #AACCFF"  class="table">
+            <thead>
+            <tr>
+                <th width="10px"></th>
+                <th width="50px">物资名称</th>
+                <th width="50px">物资编号</th>
+                <th width="40px">规格</th>
+                <th width="20px">数量</th>
+                <th width="30px">类型</th>
+                <th width="40px">入库时间</th>
+                <th width="40px">有效期至</th>
+                <th width="90px">存放位置</th>
+                <th width="10px">权限</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>

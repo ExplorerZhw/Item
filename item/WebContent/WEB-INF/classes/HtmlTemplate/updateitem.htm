@@ -1,0 +1,96 @@
+<form action="updateitem.do" method="post" onSubmit="return checkItemForm()">
+    <div class="am-g" style="margin-top: 40px">
+        <div class="am-u-sm-1">&nbsp;</div>
+        <div class="am-u-sm-10">
+            <table border="1" style="border-color: #AACCFF"  class="am-table">
+                <tr>
+                    <td>
+                        <label>物资名称</label>
+                    </td>
+                    <td>
+                    	<input id="itemId" name="itemId" type="hidden"  />
+                        <input id="iName"  name="iName" type="text" />
+                    </td>
+                    <td>
+                        <label>物资编号</label>
+                    </td>
+                    <td>
+                        <input id="iNumber" name="iNumber" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>规格</label>
+                    </td>
+                    <td>
+                        <input id="iSpec" name="iSpec" type="text" />
+                    </td>
+                    <td>
+                        <label>数量</label>
+                    </td>
+                    <td>
+                        <input id="iCount"  name="iCount" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>类型</label>
+                    </td>
+                    <td>
+                        <input id="iType"  name="iType" type="text"/>
+                    </td>
+                    <td>
+                        <label>权限级别</label>
+                    </td>
+                    <td>
+                        <input id="iLevel"  name="iLevel" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>生产厂家</label>
+                    </td>
+                    <td>
+                        <input id="factory"  name="factory" type="text" />
+                    </td>
+                    <td>
+                        <label>存放位置</label>
+                    </td>
+                    <td>
+                        <input id="iLocation" name="iLocation"  type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>入库时间</label>
+                    </td>
+                    <td>
+                        <input  name="iInstoreTime_y"  type="text"  id="iInstoreTime_y" size='5px' />年
+                        <input  name="iInstoreTime_m"  type="text"  id="iInstoreTime_m"  size='5px' />月
+                        <input  name="iInstoreTime_d"  type="text"  id="iInstoreTime_d" size='5px' />日
+                    </td>
+                    <td>
+                        <label>有效期至</label>
+                    </td>
+                    <td>
+                        <input  name="iAbateTime_y"  type="text"  id="iAbateTime_y"  size='5px' />年
+                        <input  name="iAbateTime_m"  type="text"  id="iAbateTime_m"  size='5px' />月
+                        <input  name="iAbateTime_d"  type="text"  id="iAbateTime_d"  size='5px' />日
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>备注</label>
+                    </td>
+                    <td>
+                        <textarea  name="other"   id="other"  rows="3" cols="20"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="am-u-sm-1">&nbsp;</div>
+    </div>
+    <div style="text-align: center;">
+    	<button type="submit" class="am-btn am-btn-primary am-btn-xs">确定</button>
+    </div>
+</form>
