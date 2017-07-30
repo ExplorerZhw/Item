@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/temee"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/jstl.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-aop-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-aspects-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-beans-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-context-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-context-support-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-core-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-expression-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-instrument-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-instrument-tomcat-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-jdbc-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-jms-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-messaging-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-orm-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-oxm-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-test-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-tx-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-web-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-webmvc-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-webmvc-portlet-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/spring-websocket-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/mysql-connector-java-5.0.4-bin.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/ezmorph-1.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/lib/springmvc/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/lib/other/servlet-api.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

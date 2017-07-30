@@ -54,8 +54,16 @@ public class ApplyServiceImpl implements ApplyService{
 	}
 
 	@Override
-	public String findItemByKey(String key) {
-		List<Map<String,String>> factorys = applyDao.findItemByKey(key);
+	public String findApplyByKey(String keyType, String keyValue) {
+//		String sql = "select * from apply where iType='"+key+"' || iName='"+key+"' || iSpec='"+key+"' || checkPerson='"+key+"' || applyPerson='"+key+"' || aState='"+key+"'";		
+		if(keyValue.equals("\u65b0\u5efa")) {//新建
+			keyValue = "new";
+		}else if(keyValue.equals("\u6279\u51c6")) {//批准
+			keyValue = "pass";
+		}else if(keyValue.equals("\u62d2\u7edd")) {//拒绝
+			keyValue = "reject";
+		}
+		List<Map<String,String>> factorys = applyDao.findApplyByKey(keyType, keyValue);
 		if(factorys != null){
 			JSONArray jsonarray = JSONArray.fromObject(factorys);
 			return jsonarray.toString();

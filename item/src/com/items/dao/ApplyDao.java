@@ -8,7 +8,7 @@ public interface ApplyDao {
 	public List<Map<String,String>> searchNameByType(String iType);
 	public List<Map<String,String>> searchSpecByName(String iType, String iName);
 	public List<Map<String,String>> searchFactoryBySpec(String iType, String iName, String iSpec);
-	public List<Map<String,String>> findItemByKey(String key);
+	public List<Map<String,String>> findApplyByKey(String keyType, String keyValue);
 	public int passCheck(String[] ids, String user);
 	public int RejectCheck(String[] ids, String user);
 }

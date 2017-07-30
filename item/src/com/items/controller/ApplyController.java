@@ -83,15 +83,9 @@ public class ApplyController {
 	@ResponseBody
 	@RequestMapping("/searchapply.do")
 	public void searchApplyController(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		String key = request.getParameter("key");
-		if(key.equals("\u65b0\u5efa")) {//新建
-			key = "new";
-		}else if(key.equals("\u6279\u51c6")) {//批准
-			key = "pass";
-		}else if(key.equals("\u62d2\u7edd")) {//拒绝
-			key = "reject";
-		}
-		String retMsg = applyService.findItemByKey(key);
+		String keyType = request.getParameter("keytype");
+		String keyValue = request.getParameter("keyvalue");
+		String retMsg = applyService.findApplyByKey(keyType, keyValue);
 		retMsg = retMsg.replace("new", "\u65b0\u5efa").replace("pass", "\u6279\u51c6").replace("reject", "\u62d2\u7edd");
 		System.out.println(retMsg);
 		response.setCharacterEncoding("UTF-8");

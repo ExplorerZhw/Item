@@ -119,9 +119,9 @@ public class ApplyDaoImpl implements ApplyDao {
 	}
 	
 	@Override
-	public List<Map<String, String>> findItemByKey(String key) {
+	public List<Map<String, String>> findApplyByKey(String keyType, String keyValue) {
 		List<Map<String,String>> list = new ArrayList<>();
-		String sql = "select * from apply where iType='"+key+"' || iName='"+key+"' || iSpec='"+key+"' || checkPerson='"+key+"' || applyPerson='"+key+"' || aState='"+key+"'";
+		String sql = "select * from apply where "+keyType+"='"+keyValue+"'";
 		System.out.println(sql);
 		try {
 			Connection con = ConnectDB.conDatabase();

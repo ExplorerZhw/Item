@@ -137,15 +137,21 @@ function setAddApplyTime() {
 	document.getElementById("aOutTime_d").value = d;
 }
 
-function searchapply(key){
-	if(key == undefined || key ==null || key == ""){
-		key = document.getElementById("searchStr").value;
+function searchapply(){
+	var keyType = $("#keyType").val();
+	var keyValueObj = document.getElementById("searchStr");
+	var keyValue = "";
+	if(keyValueObj == undefined || keyValueObj ==null){
+		keyValue = document.getElementById("searchStr").value;
+	}else{
+		alert("服务错误，请刷新页面或者重新登录");
+		return false;
 	}
-	if(key != ""){
+	if(keyValue.trim() != ""){
 		$.ajax({
 	        type:'post',
 	        async: false,
-	        data:{'key':key,},
+	        data:{'keyType':keyType,'keyValue':keyValue},
 	        url:"../item/searchapply.do",
 	        dataType:"JSON",
 	        success:function(data){
@@ -181,7 +187,7 @@ function searchapply(key){
                     applyPerson+"</th><th>"+
                     aState+"</th><tr>"
                 }); 
-                alert(html);
+               
             $('#itemInfo').html(html);
         },
 	        error:function(){
@@ -189,10 +195,11 @@ function searchapply(key){
 	        }
 	    });
 	}else{
-		alert("查询关键字无法匹配，请重新输入");
+		alert("请填写查询关键字");
 	}
 }
 function passCheck(){
+	var keyValue = document.getElementById("searchStr").value;
 	var obj = document.getElementsByName("ck");
 	var ids = "";
 	for(var i = 0; i < obj.length; i ++){
@@ -210,7 +217,9 @@ function passCheck(){
 	        url:"../item/passCheck.do?ids="+ids+"&user="+user,
 	        dataType:"text",
 	        success:function(data){
-	        	searchapply(data);
+	        	if(keyValue != undefined || keyValue != null || keyValue.trim() != ""){
+	        		searchapply();
+	        	}
 	        },
 	        error:function(){
 	            alert("系统错误,请重新登录");
@@ -220,6 +229,7 @@ function passCheck(){
 }
 
 function rejectCheck(){
+	var keyValue = document.getElementById("searchStr").value;
 	var obj = document.getElementsByName("ck");
 	var ids = "";
 	for(var i = 0; i < obj.length; i ++){
@@ -237,7 +247,9 @@ function rejectCheck(){
 	        url:"../item/RejectCheck.do?ids="+ids+"&user="+user,
 	        dataType:"text",
 	        success:function(data){
-	        	searchapply(data);
+	        	if(keyValue != undefined || keyValue != null || keyValue.trim() != ""){
+	        		searchapply();
+	        	}
 	        },
 	        error:function(){
 	            alert("系统错误,请重新登录");
